@@ -1,11 +1,18 @@
-const open = document.getElementById('openModal');
-const close = document.getElementById('openModal');
-const  modal =  document.getElementById('modal');
+const openModalBtn = document.getElementById('openModal');
+const closeModal = document.getElementById('closeModal');
+const modal = document.getElementById('modal');
+const modalContent = document.querySelector(".modal-content");
 
-open.onclick = () => {
-    modal.classList.remove('hidden')
+openModalBtn.onclick = () => {
+    modal.classList.remove('hidden');
 }
 
-close.onclick = () => {
-    modal.classList.add('hidden')
+closeModal.onclick = () => {
+    modal.classList.add('hidden');
 }
+
+document.addEventListener('click', (e) => {
+    if (!modalContent.contains(e.target) && !e.target.closest('#openModal')) {
+        modal.classList.add('hidden');
+    }
+});
