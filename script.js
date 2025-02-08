@@ -1,7 +1,11 @@
-document.getElementById('openModal').addEventListener('click', function() {
-    document.getElementById('modal').classList.remove('hidden');
-});
+const open = document.getElementById('openModal');
+const close = document.getElementById('openModal');
+const  modal =  document.getElementById('modal');
 
-document.getElementById('closeModal').addEventListener('click', function() {
-    document.getElementById('modal').classList.add('hidden');
-});
+open.onclick = () => {
+    modal.classList.remove('hidden')
+}
+
+close.onclick = () => {
+    modal.classList.add('hidden')
+}
