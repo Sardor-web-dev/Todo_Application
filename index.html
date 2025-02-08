@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/icons8-list-50.png" alt="">
+                <p>Todo App</p>
+            </div>
+            <button id="openModal" class="modal-button">
+                <img src="./assets/icons8-list-52 (1).png" alt="">
+            </button>
+        </header>
+
+        <main class="main-content">
+            <div class="todo-category">
+                <div class="todo-card">
+                    <h3 class="category-title">work <span class="task-count">2</span></h3>
+                    <ul class="task-list">
+                        <li><input type="checkbox"> Finish quarterly report <span class="due-date">Due: 2023-06-15</span></li>
+                        <li><input type="checkbox"> Prepare presentation for team meeting <span class="due-date">Due: 2023-06-25</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="todo-category">
+                <div class="todo-card">
+                    <h3 class="category-title">personal <span class="task-count">2</span></h3>
+                    <ul class="task-list">
+                        <li><input type="checkbox"> Buy groceries <span class="due-date">Due: 2023-05-20</span></li>
+                        <li><input type="checkbox"> Schedule dentist appointment <span class="due-date">Due: 2023-06-01</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <div class="add-task-section">
+            <button id="openAddTask">Add a new task</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <input type="text" placeholder="Add a new task" class="task-input">
+                <button id="closeModal" class="close-button">X</button>
+            </div>
+            <div class="modal-body">
+                <select class="task-select">
+                    <option>Personal</option>
+                    <option>Work</option>
+                </select>
+                <select class="task-select">
+                    <option>Medium</option>
+                    <option>High</option>
+                    <option>Low</option>
+                </select>
+                <input type="date" class="task-date">
+                <input type="text" placeholder="Add notes" class="task-notes">
+                <button class="submit-task">Add Task</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
