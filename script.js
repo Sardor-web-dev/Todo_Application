@@ -12,7 +12,7 @@ closeModal.onclick = () => {
 }
 
 document.onclick = (e) => {
-    if (modal.contains(e.target) && !modalContent.contains(e.target) && e.target !== openModalBtn) {
+    if (modal.contains(e.target) && !modalContent.contains(e.target)) {
         modal.classList.add('hidden');
     }
 }
