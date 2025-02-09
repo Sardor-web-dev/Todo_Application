@@ -1,4 +1,4 @@
-const openModalBtn = document.getElementById('openModal');
+const openModalBtn = document.querySelector('#openModal')
 const closeModal = document.getElementById('closeModal');
 const modal = document.getElementById('modal');
 const modalContent = document.querySelector(".modal-content");
@@ -11,8 +11,8 @@ closeModal.onclick = () => {
     modal.classList.add('hidden');
 }
 
-document.addEventListener('click', (e) => {
-    if (!modalContent.contains(e.target) && !e.target.closest('#openModal')) {
+document.onclick = (e) => {
+    if (modal.contains(e.target) && !modalContent.contains(e.target) && e.target !== openModalBtn) {
         modal.classList.add('hidden');
     }
-});
+}
