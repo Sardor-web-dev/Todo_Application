@@ -47,9 +47,9 @@
     height: 220px;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
+    border-radius: 10px;;
+    box-shadow: 2px 2px 10px rgba(2, 2, 2, 0.1);
+}   
 
 .category-title {
     font-size: 18px;
@@ -93,7 +93,29 @@
     color: #666;
 }
 
-
+.save{
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+.save img{
+    width: 15px;
+    height: 15px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.delete{
+    width: 15px;
+    height: 15px;
+    border: none;
+}
+.delete img{
+    width: 15px;
+    height: 15px;
+}
 .add-task-section {
     margin-left: 10px;
     margin-top: 20px;
