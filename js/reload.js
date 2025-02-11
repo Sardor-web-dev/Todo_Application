@@ -1,58 +1,3 @@
-const openModalBtn = document.querySelector('#openModal')
-const openCardModal = document.querySelector('#openCardModal')
-const closeModal = document.getElementById('closeModal');
-const modal = document.getElementById('modal');
-const main = document.querySelector('.main-content')
-const taskList = document.querySelector('.task-list')
-
-openModalBtn.onclick = () => {
-    modal.classList.remove('hidden');
-    document.querySelector('form[name="addTask"]').classList.remove('hidden');
-    document.querySelector('form[name="addCard"]').classList.add('hidden');
-}
-
-
-openCardModal.onclick = () => {
-    modal.classList.remove('hidden');
-    document.querySelector('form[name="addTask"]').classList.add('hidden');
-    document.querySelector('form[name="addCard"]').classList.remove('hidden');
-}
-
-closeModal.onclick = () => {
-    modal.classList.add('hidden');
-}
-const tasks = [
-    {
-        id:1,
-        title:"Learn Js",
-        isDone: false,
-        date:"2024-12-05"
-    },
-    {
-        id:2,
-        title:"Learn Html",
-        isDone: true,
-        date:"2024-03-4"
-    },
-    {
-        id:3,
-        title:"Learn CSS",
-        isDone: true,
-        date:"2024-04-15"
-    },
-    {
-        id:4,
-        title:"Learn Backend",
-        isDone: false,
-        date:"2025-06-05"
-    },
-    {
-        id:5,
-        title:"Learn React",
-        isDone: false,
-        date:"2025-03-10"
-    },
-];
 function reload() {
     for(let item of tasks) {
                 const task = document.createElement('div');
@@ -96,6 +41,3 @@ function reload() {
     }
 
 }
-reload();
-
-
