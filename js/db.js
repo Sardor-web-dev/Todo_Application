@@ -2,7 +2,7 @@ const tasks = [
     {
         id:1,
         title:"Learn Js",
-        isDone: false,
+        isDone: true,
         date:"2024-12-05"
     },
     {
