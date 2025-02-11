@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -13,74 +15,41 @@
                 <img src="./assets/icons8-list-50.png" alt="">
                 <p>Todo App</p>
             </div>
-            <button id="openModal" class="modal-button">
-                <img id="openModal"  src="./assets/icons8-list-52 (1).png" alt="">
-            </button>
+            <div class="buttons">
+                <button id="openCardModal" class="modal-button">
+                    Add Card
+                </button>
+                <button id="openModal" class="modal-button">
+                    <img id="openModal" src="./assets/icons8-list-52 (1).png" alt="">
+                </button>
+            </div>
         </header>
 
         <main class="main-content">
-            
             <div class="todo-category">
-                <div class="todo-card">
-                    <h3 class="category-title">work <span class="task-count">1</span></h3>
-                    <ul class="task-list">
-                        <div class="task">
-                            <input type="checkbox"> 
-                            <div class="smth">
-                                <li>Finish quarterly report</li>
-                                <span class="due-date">Due: 2023-06-15</span>
-                            </div>
-                            <div class="btns">
-                                <button class="save"><img src="./assets/icons8-backspace-50.png" alt=""></button>
-                                <button class="delete"><img src="./assets/icons8-delete-24.png" alt=""></button>
-                            </div>
-                        </div>
-                        <div class="task">
+                <h3 class="category-title">work <span class="task-count">1</span></h3>
+                <div class="task-list">
+                    <div class="task">
+                        <div class="task_name">
                             <input type="checkbox">
                             <div class="smth">
-                                <li>Prepare presentation for team meeting </li>
-                                <span class="due-date">Due: 2023-06-25</span>
-                            </div>
-                            <div class="btns">
-                                <button class="save"><img src="./assets/icons8-backspace-50.png" alt=""></button>
-                                <button class="delete"><img src="./assets/icons8-delete-24.png" alt=""></button>
+                                <p>Finish quarterly report</p>
+                                <span class="due-date">Due: 2023-06-15</span>
                             </div>
                         </div>
-                    </ul>
+                        <div class="btns">
+                            <button class="save"><img src="./assets/icons8-backspace-50.png" alt=""></button>
+                            <button class="delete"><img src="./assets/icons8-delete-24.png" alt=""></button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="todo-category">
-                <div class="todo-card">
-                    <h3 class="category-title">personal <span class="task-count">2</span></h3>
-                    <ul class="task-list">
-                        <div class="task">
-                            <input type="checkbox"> 
-                            <div class="smth">
-                                <li>Buy groceries</li>
-                                <span class="due-date">Due: 2023-05-20</span>
-                            </div>
-                            <button class="save"><img src="./assets/icons8-backspace-50.png" alt=""></button>
-                            <button class="delete"><img src="./assets/icons8-delete-24.png" alt=""></button>
-                        </div>
-                        <div class="task">
-                            <input type="checkbox">
-                            <div class="smth">
-                                <li>Schedule dentist appointment </li>
-                                <span class="due-date">Due: 2023-06-01</span>
-                            </div>
-                            <button class="save"><img src="./assets/icons8-backspace-50.png" alt=""></button>
-                            <button class="delete"><img src="./assets/icons8-delete-24.png" alt=""></button>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-            
         </main>
     </div>
 
     <div id="modal" class="modal hidden">
-        <div class="modal-content">
+        <form name="addTask" class="modal-content">
             <div class="btn">
                 <button id="closeModal" class="close-button"><img src="./assets/icons8-x-48.png" alt=""></button>
             </div>
@@ -101,9 +70,21 @@
                 <input type="text" placeholder="Add notes" class="task-notes">
                 <button class="submit-task">Add Task</button>
             </div>
-        </div>
+        </form>
+        <form name="addCard" class="modal-content">
+            <div class="btn">
+                <button id="closeModal" class="close-button"><img src="./assets/icons8-x-48.png" alt=""></button>
+            </div>
+            <div class="modal-header">
+                <input type="text" placeholder="Add a new card" class="task-input">
+            </div>
+            <div class="modal-body">
+                <button class="submit-task">Add Card</button>
+            </div>
+        </form>
     </div>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
