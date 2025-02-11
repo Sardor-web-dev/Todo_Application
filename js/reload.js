@@ -25,11 +25,9 @@ function reload() {
                 checkBox.setAttribute ( "type","checkbox");
         
                 title.innerHTML = item.title;
-                title.innerHTML = item.title;
                 date.innerHTML = `Due: ${item.date}`;
-                if(item.isDone) {
-                    checkBox.checked = true;
-                }
+                checkBox.checked = item.isDone;
+
         
                 btnChange.append(btnChangeImg);
                 btnDelete.append(btnDeleteImg);
