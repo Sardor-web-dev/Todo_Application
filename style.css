@@ -125,20 +125,17 @@
 .hidden {
     display: none;
 }
-
 .btn {
     display: flex;
     align-items: end;
     justify-content: end;
 }
-
 .modal-content {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     width: 400px;
 }
-
 .modal-header {
     display: flex;
     justify-content: space-between;
