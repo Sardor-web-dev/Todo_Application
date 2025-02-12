@@ -141,17 +141,14 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .close-button {
     border: none;
     cursor: pointer;
 }
-
 .close-button img {
     width: 15px;
     height: 15px;
 }
-
 .task-input,
 .task-select,
 .task-date,
