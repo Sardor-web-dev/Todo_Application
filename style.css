@@ -159,7 +159,6 @@
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 .submit-task {
     width: 100%;
     padding: 10px;
@@ -170,18 +169,15 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .task_name {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .task {
     display: flex;
     justify-content: space-between;
 }
-
 .buttons {
     display: flex;
     align-items: center;
