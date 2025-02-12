@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,7 +12,6 @@
     padding: 15px;
     color: white;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -25,18 +23,15 @@
     width: 30px;
     margin-right: 10px;
 }
-
 .modal-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-
 .modal-button img {
     width: 25px;
     height: 25px;
 }
-
 .main-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -44,7 +39,6 @@
     margin-top: 20px;
     padding: 20px;
 }
-
 .todo-category {
     background: white;
     padding: 20px;
