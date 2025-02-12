@@ -60,13 +60,11 @@
     padding: 6px 10px;
     border-radius: 50%;
 }
-
 .task {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
 .task-list {
     margin-top: 15px;
     display: flex;
