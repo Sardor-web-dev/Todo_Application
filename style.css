@@ -94,25 +94,21 @@
     width: 15px;
     height: 15px;
 }
-
 .btns {
     display: flex;
     align-items: center;
     gap: 25px;
 }
-
 .delete {
     cursor: pointer;
     width: 15px;
     height: 15px;
     border: none;
 }
-
 .delete img {
     width: 15px;
     height: 15px;
 }
-
 .add-task-section {
     margin-left: 10px;
     margin-top: 20px;
