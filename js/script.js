@@ -45,4 +45,26 @@ cardForm.onsubmit = (e) => {
     todoCards.push(card);
 
     reloadCard(todoCards);
+    cardForm.reset();
 }
+
+
+taskForm.onsubmit = (e) => {
+    e.preventDefault();
+
+    const task = {
+        id: Math.random(),
+        title:'Learn JS',
+        date:'2025.05.12',
+        isDone: true
+    };
+
+    const fm = new FormData(taskForm);
+    fm.forEach((val, key) => {
+        task[key] = val;
+    }); 
+
+    todoCards[0].tasks.push(task);
+
+    reloadCard(todoCards);
+};
