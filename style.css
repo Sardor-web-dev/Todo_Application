@@ -71,14 +71,10 @@
     flex-direction: column;
     gap: 25px;
 }
-.task-list li {
-    display: flex;
-}
 .smth {
     display: flex;
     flex-direction: column;
     gap: 5px;
-
 }
 .due-date {
     font-size: 12px;
