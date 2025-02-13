@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -24,12 +26,6 @@
         </header>
 
         <main class="main-content">
-            <div class="todo-category">
-                <h3 class="category-title">work <span class="task-count">1</span></h3>
-                <div class="task-list">
-                </div>
-            </div>
-
         </main>
     </div>
 
@@ -58,10 +54,12 @@
         </form>
         <form name="addCard" class="modal-content">
             <div class="btn">
-                <button id="closeModal" class="close-button"><img src="./assets/icons8-x-48.png" alt=""></button>
+                <button type="button" id="closeModal" class="close-button">
+                    <img src="./assets/icons8-x-48.png" alt="">
+                </button>
             </div>
             <div class="modal-header">
-                <input type="text" placeholder="Add a new card" class="task-input">
+                <input type="text" placeholder="Add a new card" class="task-input" name="title">
             </div>
             <div class="modal-body">
                 <button class="submit-task">Add Card</button>
