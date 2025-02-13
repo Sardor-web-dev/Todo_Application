@@ -44,6 +44,11 @@ cardForm.onsubmit = (e) => {
 
     todoCards.push(card);
 
+    todoCards[0].tasks.push({
+        title: 'asdasdads',
+        isDone: true
+    });
+
     reloadCard(todoCards);
     cardForm.reset();
 }
