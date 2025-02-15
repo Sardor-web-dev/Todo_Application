@@ -58,6 +58,7 @@ cardForm.onsubmit = (e) => {
     };
 
     todoCards.push(card);
+    localStorage.setItem('tasks', JSON.stringify(todoCards));
     reloadCard(todoCards);
     updateCardSelect();
     cardForm.reset();
@@ -82,4 +83,5 @@ taskForm.onsubmit = (e) => {
     todoCards[selectedCardIndex].tasks.push(task);
     reloadCard(todoCards);
     taskForm.reset();
+    localStorage.setItem('tasks', JSON.stringify(todoCards));
 };

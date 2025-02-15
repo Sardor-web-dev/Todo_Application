@@ -14,3 +14,4 @@ console.log(todoCards);
 // get from localStorage and parsing
 // const todos = JSON.parse(localStorage.getItem("tasks"));
 // console.log(todos);
+
